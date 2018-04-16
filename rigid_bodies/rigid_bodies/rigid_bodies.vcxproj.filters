@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\gl">
+      <UniqueIdentifier>{3ccd2ea2-b26b-4560-bcb9-5d2bf0394f1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\stb_image">
+      <UniqueIdentifier>{baa66421-1ea7-4e0a-bc4e-5435ed851c9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tiny_obj_loader">
+      <UniqueIdentifier>{6557bcde-81f8-4c53-8fb4-bc2d3ada4344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tiny_obj_loader">
+      <UniqueIdentifier>{ddf16ebc-eead-4be0-af01-aed20dc328a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Physics">
+      <UniqueIdentifier>{295c1264-fc89-4033-ad87-f52a873d8583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Physics">
+      <UniqueIdentifier>{3cb587e8-2b36-4c54-bda2-cc51ed241241}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\tiny_object_loader\tiny_obj_loader.cpp">
+      <Filter>Source Files\tiny_obj_loader</Filter>
+    </ClCompile>
+    <ClCompile Include="load_image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rigid_bodies_testing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="physics_math.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="rigid_body.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\gl\glew\glew-2.1.0\include\GL\eglew.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gl\glew\glew-2.1.0\include\GL\glew.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gl\glfw\glfw-3.2.1.bin.WIN64\include\GLFW\glfw3.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gl\glfw\glfw-3.2.1.bin.WIN32\include\GLFW\glfw3.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gl\glfw\glfw-3.2.1.bin.WIN32\include\GLFW\glfw3native.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gl\glfw\glfw-3.2.1.bin.WIN64\include\GLFW\glfw3native.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gl\glew\glew-2.1.0\include\GL\glxew.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gl\glew\glew-2.1.0\include\GL\wglew.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stb_image\stb_image.h">
+      <Filter>Header Files\stb_image</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stb_image\stb_image_resize.h">
+      <Filter>Header Files\stb_image</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stb_image\stb_image_write.h">
+      <Filter>Header Files\stb_image</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stb_image\stb_perlin.h">
+      <Filter>Header Files\stb_image</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tiny_object_loader\tiny_obj_loader.h">
+      <Filter>Header Files\tiny_obj_loader</Filter>
+    </ClInclude>
+    <ClInclude Include="colors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glslprogram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="light.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="load_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="opengl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="varhandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rigid_bodies_testing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dynamic_body.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physics_manager.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="rigid_body.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physics_types.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physics_math.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
