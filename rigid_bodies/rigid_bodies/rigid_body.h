@@ -80,4 +80,4 @@ public:
 
 };
 
-void checkCollision(RigidBody* b1, RigidBody* b2);
+glm::vec3 checkCollision(RigidBody* b1, RigidBody* b2);

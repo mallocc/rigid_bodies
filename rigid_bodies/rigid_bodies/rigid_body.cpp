@@ -1,12 +1,12 @@
 #include "rigid_body.h"
 
-void checkCollision(RigidBody* b1, RigidBody* b2)
+glm::vec3 checkCollision(RigidBody* b1, RigidBody* b2)
 {
 	// macro test
 	if ((b1->pos - b2->pos).length() > b1->maxRadius + b2->maxRadius)
 	{
 		//printf("not close enough\n");
-		return;
+		return glm::vec3();
 	}
 
 	// micro test 
@@ -173,7 +173,9 @@ void checkCollision(RigidBody* b1, RigidBody* b2)
 			//W2 = glm::normalize(glm::cross(W2, r2));
 			//b2->rotVec = ;
 			//b2->rotVec.w = W2.magnitude() / r1.magnitude();
-
+			return *vert;
 		}
+
 	}
+	return glm::vec3();
 }

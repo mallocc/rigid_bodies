@@ -23,7 +23,7 @@ struct PhysicsManager
 		return body;
 	}
 
-	void updateBodies()
+	glm::vec3 updateBodies()
 	{
 		for (DynamicBody * b : bodies)
 		{
@@ -49,7 +49,7 @@ struct PhysicsManager
 		//					checkCollision(rb1, rb2);
 		//				}
 
-		checkCollision(dynamic_cast<RigidBody*>(bodies[0]), dynamic_cast<RigidBody*>(bodies[1]));
+		return checkCollision(dynamic_cast<RigidBody*>(bodies[0]), dynamic_cast<RigidBody*>(bodies[1]));
 
 	}
 

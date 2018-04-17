@@ -85,7 +85,7 @@ void loop()
 	proj_mat_handle.load();
 
 	//// UPDATE PHYSICS
-	physics.updateBodies();
+	sphere.pos = physics.updateBodies();
 	cube.pos = physics.getRigidBody(0)->pos;
 	cube.theta = physics.getRigidBody(0)->rot.r;
 	cube.rotation = physics.getRigidBody(0)->rot;
@@ -96,7 +96,7 @@ void loop()
 
 	//// DRAW OBJECTS
 
-	//sphere.draw(0, &model_mat_handle, nullptr, nullptr, nullptr);
+	sphere.draw(0, &model_mat_handle, nullptr, nullptr, nullptr);
 	//sphere2.draw(0, &model_mat_handle, nullptr, nullptr, nullptr);
 	cube.draw(0, &model_mat_handle, nullptr, nullptr, nullptr);
 	container.draw(1, &model_mat_handle, nullptr, nullptr, nullptr);
@@ -114,9 +114,9 @@ void init_physics()
 
 	RigidBody * rb1 =  new RigidBody();
 	rb1->pos = glm::vec3();
-	rb1->vel = glm::vec3(0,0.001f,0);
+	rb1->vel = glm::vec3(0,0.001f,0.001f);
 	rb1->rot = glm::vec3(0, 1, 0);
-	//rb1->rot.b = 0.01f;
+	rb1->rot.b = 0.01f;
 
 	rb1->verts.push_back(glm::vec3(-1, -1, -1));
 	rb1->verts.push_back(glm::vec3(-1, -1, 1));
@@ -208,7 +208,7 @@ void			init()
 		glm::vec3(1,0,0),
 		glm::vec3(1, 0, 0),
 		glm::radians(90.0f),
-		glm::vec3(1, 1, 1)
+		glm::vec3(1, 1, 1) * 0.1f
 	);
 
 	sphere2 = sphere;
